@@ -20,3 +20,6 @@ jobs:
       - run: go get -v -t -d ./...
       - run: go test -v ./...
       - run: go build -o main main.go
+      - run: zip main.zip main
+      - store_artifacts:
+          path: main.zip
