@@ -29,5 +29,12 @@ Invoke-WebRequest  $(terraform output base_url) |select -ExpandProperty content
 Step 3. auto build and deploy function with CircleCI
 ----------------------------------------------------
 
+follow steps on https://circleci.com/docs/2.0/getting-started/
 
+Step 3. Bonus round: add local builds and pre-commit validation
+---------------------------------------------------------------
+
+Step 4. Build zip and push to s3 bucket
+
+https://circleci.com/blog/circleci-hacks-validate-circleci-config-on-every-commit-with-a-git-hook/
 
