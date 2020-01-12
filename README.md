@@ -38,3 +38,5 @@ Step 4. Build zip and push to s3 bucket
 
 https://circleci.com/blog/circleci-hacks-validate-circleci-config-on-every-commit-with-a-git-hook/
 
+Step 5. Build zip artifact and push to s3 bucket
+

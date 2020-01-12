@@ -23,3 +23,16 @@ jobs:
       - run: zip main.zip main
       - store_artifacts:
           path: main.zip
+  
+  deploy:
+    docker:
+      - image: circleci/python:3.7-stretch
+    working_directory:  /go/src/github.com/ericjaystevens/agilespud
+    steps:
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          name: Deploy to S3
+          command: aws s3 cp main.zip s3://samagilespud 
+  
