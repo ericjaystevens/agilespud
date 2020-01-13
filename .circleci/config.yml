@@ -25,14 +25,14 @@ jobs:
       - run: mkdir bin
       - run: zip bin/main.zip main
       - persist_to_workspace:
-        root: bin
+          root: bin
   deploy:
     docker:
       - image: circleci/python:3.7-stretch
     steps:
       - attach_workspace:
         # Must be absolute path or relative path from working_directory
-        at: /tmp/bin
+          at: /tmp/bin
 
       - run:
           name: Install awscli
