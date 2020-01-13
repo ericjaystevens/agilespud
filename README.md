@@ -34,9 +34,12 @@ follow steps on https://circleci.com/docs/2.0/getting-started/
 Step 3. Bonus round: add local builds and pre-commit validation
 ---------------------------------------------------------------
 
+# Template:
+[![ericjaystevens](https://circleci.com/gh/ericjaystevens/agilespud.svg?style=svg)](<LINK>)
+
 Step 4. Build zip and push to s3 bucket
 
 https://circleci.com/blog/circleci-hacks-validate-circleci-config-on-every-commit-with-a-git-hook/
 
-Step 5. Build zip artifact and push to s3 bucket
-
+Used pesistant storage and workflows
+https://circleci.com/docs/2.0/sample-config/
