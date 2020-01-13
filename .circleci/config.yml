@@ -41,6 +41,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
+          command: s3 cp /tmp/bin/main.zip s3://samagilespud
 
 workflows:
   version: 2
