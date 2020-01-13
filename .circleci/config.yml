@@ -26,6 +26,8 @@ jobs:
       - run: zip bin/main.zip main
       - persist_to_workspace:
           root: bin
+          paths:
+            - main.zip
   deploy:
     docker:
       - image: circleci/python:3.7-stretch
